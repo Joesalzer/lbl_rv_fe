@@ -7,6 +7,8 @@ Requires rv_helper.R in the working directory.
 
 This script fits both OLS and IRLS versions of the model. Results are saved in the \<outputDir\> with the base name of the csv file, as \<fileName\>__fit=OLS.rds and \<fileName\>__fit=IRLS.rds.
 
+Note that the IRLS model defaults to a BIC tolerance of 1, with a maximum number of iterations as 45. This can be modified within the script.
+
 # Run line-by-line fixed effects models, with CV
 Usage: Rscript lblfe_cv_fit.R \<inputCSVPath\> \<outputDir\>
 
