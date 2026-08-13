@@ -1,5 +1,5 @@
 # Run line-by-line fixed effects models
-Usage: Rscript lblfe_fit.R <inputCSVPath> <outputDir>
+Usage: Rscript lblfe_fit.R \<inputCSVPath> <outputDir>
 
 Where <inputCSVPath> is the path to a csv file. The first four columns must be named "lineID", "timeID", "date", and "rv_dirty". Any additional columns are treated as covariates, and each line will be assigned a unique slope for each covariate.
 
